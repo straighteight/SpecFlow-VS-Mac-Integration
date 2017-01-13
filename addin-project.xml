@@ -1,5 +1,5 @@
-<AddinProject appVersion="6.0">
-    <Project platforms="Win32 Mac Linux">
+<AddinProject appVersion="7.0">
+    <Project platforms="Mac">
         <AddinFile>IdeIntegration/XamarinStudioIntegration/bin/Release/XamarinStudio.TechTalk.SpecFlow.dll</AddinFile>
         <BuildFile>TechTalk.SpecFlow.XS.sln</BuildFile>
         <BuildConfiguration>Release</BuildConfiguration>
