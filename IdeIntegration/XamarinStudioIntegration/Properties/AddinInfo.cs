@@ -4,7 +4,7 @@ using Mono.Addins.Description;
 [assembly: Addin(
 	"TechTalk.SpecFlow",
 	Namespace = "TechTalk.SpecFlow",
-	Version = "1.10.0.0"
+	Version = "1.11.0.0"
 )]
 
 [assembly: AddinName("SpecFlow Support")]
