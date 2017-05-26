@@ -32,7 +32,7 @@
 	</Extension>
 
     <Extension path="/MonoDevelop/Ide/Editor/Bundles">
-        <Bundle resource="Cucumber.sublime-package" />
+        <Bundle file="Bundles/Cucumber.sublime-package" />
     </Extension>
 
     <Extension path = "/MonoDevelop/Ide/ProjectTemplates">
