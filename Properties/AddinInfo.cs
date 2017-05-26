@@ -2,12 +2,11 @@
 using Mono.Addins.Description;
 
 [assembly: Addin(
-	"VisualStudio.SpecFlow",
-	Namespace = "VisualStudio.SpecFlow",
+	"StraightEight.VsMac.SpecFlow",
 	Version = "1.11.0.0"
 )]
 
-[assembly: AddinName("SpecFlow Support")]
+[assembly: AddinName("Straight8's SpecFlow Intergration")]
 [assembly: AddinCategory("IDE extensions")]
-[assembly: AddinDescription("Integrates SpecFlow into the Xamarin Studio IDE.")]
+[assembly: AddinDescription("Integrates TechTalks's SpecFlow into the Visual Studio for Mac IDE.")]
 [assembly: AddinAuthor("TechTalk, SineSignal, Mike Jones, Jim Bennett")]

@@ -1,10 +1,4 @@
-// // <copyright file="${File}" company="Abel Learning Limited">
-// //    (c) Copyright Abel Learning Limited
-// //    All rights reserved. Reproduction or transmission of this file, or a portion thereof,
-// //    is forbidden without prior written permission of Abel Learning Limited
-// //    Author: Mike Jones <mike.jones@abellearning.com>
-// //    Created:  2  9  2013 
-// // </copyright>
+
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
@@ -13,9 +7,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("VisualStudio.SpecFlow")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ABEL Learning Limited")]
+[assembly: AssemblyCompany("Straight8")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("ABEL Learinng Limited")]
+[assembly: AssemblyCopyright("Straight8")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
