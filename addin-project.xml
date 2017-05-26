@@ -1,0 +1,7 @@
+<AddinProject appVersion="7.0">
+    <Project platforms="Win32 Mac Linux">
+        <AddinFile>bin/Release/VisualStudio.SpecFlow.dll</AddinFile>
+        <BuildFile>VisualStudio.SpecFlow.sln</BuildFile>
+        <BuildConfiguration>Release</BuildConfiguration>
+    </Project>
+</AddinProject>
