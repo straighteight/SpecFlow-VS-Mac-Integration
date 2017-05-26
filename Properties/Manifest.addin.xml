@@ -31,8 +31,8 @@
 		            extensions   = "*.feature"/>
 	</Extension>
 
-    <Extension path="/MonoDevelop/SourceEditor2/SyntaxModes">
-        <Templates resource="SpecFlow.SyntaxModeDefinition.xml" />
+    <Extension path="/MonoDevelop/Ide/Editor/Bundles">
+        <Bundle resource="Cucumber.sublime-package" />
     </Extension>
 
     <Extension path = "/MonoDevelop/Ide/ProjectTemplates">

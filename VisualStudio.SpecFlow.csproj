@@ -129,6 +129,7 @@
       <LogicalName>SpecFlowFile.ico</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Manifest.addin.xml" />
+    <EmbeddedResource Include="Properties\CucumberPlainTextFeature.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -141,8 +142,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AddinReference Include="MonoDevelop.SourceEditor2" />
     <AddinReference Include="MonoDevelop.Xamarin.Ide" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddinFile Include="Cucumber.sublime-package" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
