@@ -1,4 +1,4 @@
-# SpecFlow intergration for  VS for Mac
+# SpecFlow integration for  VS for Mac
 
 TechTalks's SpecFlow is a pragmatic BDD solution for .NET. It uses the Gherkin specification language. 
 
