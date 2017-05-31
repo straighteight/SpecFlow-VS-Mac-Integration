@@ -6,7 +6,7 @@ using Mono.Addins.Description;
 	Version = "1.11.1.0"
 )]
 
-[assembly: AddinName("Straight8's SpecFlow Intergration")]
+[assembly: AddinName("Straight8's SpecFlow Integration")]
 [assembly: AddinCategory("IDE extensions")]
 [assembly: AddinDescription("Integrates TechTalks's SpecFlow into the Visual Studio for Mac IDE.")]
 [assembly: AddinAuthor("TechTalk, SineSignal, Mike Jones, Jim Bennett")]
