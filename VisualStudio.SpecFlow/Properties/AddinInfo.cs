@@ -3,7 +3,7 @@ using Mono.Addins.Description;
 
 [assembly: Addin(
 	"StraightEight.VsMac.SpecFlow",
-	Version = "1.11.1.0"
+	Version = "1.11.2.0"
 )]
 
 [assembly: AddinName("Straight8's SpecFlow Integration")]

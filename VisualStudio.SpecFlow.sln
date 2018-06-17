@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudio.SpecFlow", "VisualStudio.SpecFlow.csproj", "{CC567007-C48F-44F9-95D8-FC56FE2DA330}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTalk.SpecFlow.IdeIntegration", "IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj", "{44D52C1B-0ABC-44B6-8EB8-0F754E264226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudio.SpecFlow", "VisualStudio.SpecFlow\VisualStudio.SpecFlow.csproj", "{73351DB7-3238-46A8-A19E-6C5E6B84C000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CC567007-C48F-44F9-95D8-FC56FE2DA330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC567007-C48F-44F9-95D8-FC56FE2DA330}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC567007-C48F-44F9-95D8-FC56FE2DA330}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC567007-C48F-44F9-95D8-FC56FE2DA330}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44D52C1B-0ABC-44B6-8EB8-0F754E264226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44D52C1B-0ABC-44B6-8EB8-0F754E264226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D52C1B-0ABC-44B6-8EB8-0F754E264226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D52C1B-0ABC-44B6-8EB8-0F754E264226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73351DB7-3238-46A8-A19E-6C5E6B84C000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73351DB7-3238-46A8-A19E-6C5E6B84C000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73351DB7-3238-46A8-A19E-6C5E6B84C000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73351DB7-3238-46A8-A19E-6C5E6B84C000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = XamarinStudio.TechTalk.SpecFlow.csproj
