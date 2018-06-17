@@ -23,9 +23,9 @@
     <PackageReference Include="IKVM.OpenJDK.Charsets" Version="7.2.4630.5" />
     <PackageReference Include="IKVM.OpenJDK.Security" Version="7.2.4630.5" />
     <PackageReference Include="IKVM.Runtime" Version="7.2.4630.5" />
-    <PackageReference Include="SpecFlow" Version="2.1.0" />
-    <PackageReference Include="SpecFlow.CustomPlugin" Version="2.1.0" />
     <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+    <PackageReference Include="SpecFlow" Version="2.3.2" />
+    <PackageReference Include="SpecFlow.CustomPlugin" Version="2.3.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj" />

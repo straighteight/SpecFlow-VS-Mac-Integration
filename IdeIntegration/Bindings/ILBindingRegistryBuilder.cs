@@ -63,7 +63,7 @@ namespace TechTalk.SpecFlow.IdeIntegration.Bindings
 
         private BindingType CreateBindingType(TypeReference typeReference)
         {
-            return new BindingType(typeReference.Name, typeReference.FullName);
+            return new BindingType(typeReference.Name, typeReference.FullName, typeReference.Module.Assembly.Name.Name);
         }
 
         private IEnumerable<IBindingParameter> GetParameters(MethodDefinition methodDefinition)
