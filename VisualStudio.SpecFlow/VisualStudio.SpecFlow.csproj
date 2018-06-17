@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <RootNamespace>XamarinStudio.TechTalk.SpecFlow</RootNamespace>
+    <Company>Straight8</Company>
+    <Copyright>Straight8</Copyright>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"/Applications/Visual Studio.app/Contents/MacOS/vstool" setup pack VisualStudio.SpecFlow.dll</command>
+          <workingdir>${TargetDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IKVM.OpenJDK.Core" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.Util" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.XML.API" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.Text" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.SwingAWT" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.Charsets" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.Security" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.Runtime" Version="7.2.4630.5" />
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+    <PackageReference Include="SpecFlow" Version="2.3.2" />
+    <PackageReference Include="SpecFlow.CustomPlugin" Version="2.3.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddinFile Include="Bundles\Cucumber.sublime-package">
+      <LogicalName>Cucumber.sublime-package</LogicalName>
+    </AddinFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Bundles\Cucumber.sublime-package" />
+    <None Remove="Templates\SpecFlowEventDefinition.xft.xml" />
+    <None Remove="Templates\SpecFlowFeature.xft.xml" />
+    <None Remove="Templates\SpecFlowProject.xpt.xml" />
+    <None Remove="Templates\SpecFlowStepDefinition.xft.xml" />
+    <None Remove="Gui\SpecFlowEventDefinitionIcon.ico" />
+    <None Remove="Gui\SpecFlowFeatureIcon.ico" />
+    <None Remove="Gui\SpecFlowFile.ico" />
+    <None Remove="Gui\SpecFlowProjectIcon.ico" />
+    <None Remove="Gui\SpecFlowStepDefinitionIcon.ico" />
+    <None Remove="Properties\SpecFlow.SyntaxModeDefinition.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\SpecFlow.SyntaxModeDefinition.xml">
+      <LogicalName>SpecFlow.SyntaxModeDefinition.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\SpecFlowEventDefinition.xft.xml">
+      <LogicalName>SpecFlowEventDefinition.xft.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\SpecFlowFeature.xft.xml">
+      <LogicalName>SpecFlowFeature.xft.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\SpecFlowStepDefinition.xft.xml">
+      <LogicalName>SpecFlowStepDefinition.xft.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecFlowEventDefinitionIcon.ico">
+      <LogicalName>SpecFlowEventDefinitionIcon.ico</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecFlowFeatureIcon.ico">
+      <LogicalName>SpecFlowFeatureIcon.ico</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecFlowStepDefinitionIcon.ico">
+      <LogicalName>SpecFlowStepDefinitionIcon.ico</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\SpecFlowProject.xpt.xml">
+      <LogicalName>SpecFlowProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecFlowProjectIcon.ico">
+      <LogicalName>SpecFlowProjectIcon.ico</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecFlowFile.ico">
+      <LogicalName>SpecFlowFile.ico</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
