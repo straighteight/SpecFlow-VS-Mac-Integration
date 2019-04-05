@@ -10,7 +10,7 @@ Helps you to use TechTalk's SpecFlow within Visual Studio for the Mac.
 
 ### Download Addin Visual Studio for Mac
 You can download the addin here 
-https://github.com/straighteight/SpecFlow-VS-Mac-Integration/releases/tag/1.11.0.0
+https://github.com/straighteight/SpecFlow-VS-Mac-Integration/releases/tag/1.11.3.0
 
 ### Installation Visual Studio for Mac
 To install, goto 'Visual Studio.../Extensions...' click the button on the far left saying "Install from file..." and select the mpack file from your hard drive. The addin will install and you can now run and creat specflow tests
