@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<AddinProject appVersion="7.0">
+<AddinProject appVersion="8.0">
     <Project platforms="Win32 Mac Linux">
         <AddinFile>bin/Release/VisualStudio.SpecFlow.dll</AddinFile>
         <BuildFile>VisualStudio.SpecFlow.sln</BuildFile>
