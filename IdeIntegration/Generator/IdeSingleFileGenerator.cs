@@ -4,6 +4,7 @@ using System.IO;
 using TechTalk.SpecFlow.Generator;
 using TechTalk.SpecFlow.Generator.Interfaces;
 using TechTalk.SpecFlow.Utils;
+using TechTalk.SpecFlow.Generator.CodeDom;
 
 namespace TechTalk.SpecFlow.IdeIntegration.Generator
 {

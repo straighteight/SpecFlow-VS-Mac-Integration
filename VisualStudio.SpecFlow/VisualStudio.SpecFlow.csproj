@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <RootNamespace>XamarinStudio.TechTalk.SpecFlow</RootNamespace>
     <Company>Straight8</Company>
     <Copyright>Straight8</Copyright>

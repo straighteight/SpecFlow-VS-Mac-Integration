@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading;
@@ -170,11 +171,11 @@ namespace TechTalk.SpecFlow.IdeIntegration.Generator
             }
         }
 
-        public ITestGenerator CreateGenerator(ProjectSettings projectSettings)
+        public ITestGenerator CreateGenerator(ProjectSettings projectSettings, IEnumerable<string> generatorPlugins)
         {
             EnsureInitialized();
             usageCounter.Increase();
-            var remoteGenerator = remoteTestGeneratorFactory.CreateGenerator(projectSettings);
+            var remoteGenerator = remoteTestGeneratorFactory.CreateGenerator(projectSettings, generatorPlugins);
 
             var disposeNotificationGenerator = new DisposeNotificationTestGenerator(remoteGenerator);
             disposeNotificationGenerator.Disposed += () => usageCounter.Decrease();
