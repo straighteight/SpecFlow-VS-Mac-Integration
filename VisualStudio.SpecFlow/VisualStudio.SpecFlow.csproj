@@ -14,6 +14,28 @@
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"/Applications/Visual Studio.app/Contents/MacOS/vstool" setup pack VisualStudio.SpecFlow.dll</command>
+          <workingdir>${TargetDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"/Applications/Visual Studio.app/Contents/MacOS/vstool" setup pack VisualStudio.SpecFlow.dll</command>
+          <workingdir>${TargetDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IKVM.OpenJDK.Core" Version="7.2.4630.5" />
     <PackageReference Include="IKVM.OpenJDK.Util" Version="7.2.4630.5" />
@@ -23,9 +45,9 @@
     <PackageReference Include="IKVM.OpenJDK.Charsets" Version="7.2.4630.5" />
     <PackageReference Include="IKVM.OpenJDK.Security" Version="7.2.4630.5" />
     <PackageReference Include="IKVM.Runtime" Version="7.2.4630.5" />
-    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
-    <PackageReference Include="SpecFlow" Version="2.3.2" />
-    <PackageReference Include="SpecFlow.CustomPlugin" Version="2.3.2" />
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.7" />
+    <PackageReference Include="SpecFlow" Version="3.0.191" />
+    <PackageReference Include="SpecFlow.CustomPlugin" Version="3.0.191" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj" />
