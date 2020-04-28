@@ -35,6 +35,10 @@
         <Bundle file="Bundles/Cucumber.sublime-package" />
     </Extension>
 
+    <Extension path="/MonoDevelop/Ide/Editor/TextMate">
+        <Repository folderPath = "Syntax" />
+    </Extension>
+
     <Extension path = "/MonoDevelop/Ide/ProjectTemplates">
         <ProjectTemplate id = "SpecFlowProject" resource="SpecFlowProject.xpt.xml"/>
     </Extension>
