@@ -53,15 +53,9 @@
     <ProjectReference Include="..\IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <AddinFile Include="Bundles\Cucumber.sublime-package">
-      <LogicalName>Cucumber.sublime-package</LogicalName>
-    </AddinFile>
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="Bundles\Cucumber.sublime-package" />
     <None Remove="Templates\SpecFlowEventDefinition.xft.xml" />
     <None Remove="Templates\SpecFlowFeature.xft.xml" />
-    <None Remove="Templates\SpecFlowProject.xpt.xml" />
     <None Remove="Templates\SpecFlowStepDefinition.xft.xml" />
     <None Remove="Gui\SpecFlowEventDefinitionIcon.ico" />
     <None Remove="Gui\SpecFlowFeatureIcon.ico" />
@@ -69,6 +63,11 @@
     <None Remove="Gui\SpecFlowProjectIcon.ico" />
     <None Remove="Gui\SpecFlowStepDefinitionIcon.ico" />
     <None Remove="Properties\SpecFlow.SyntaxModeDefinition.xml" />
+    <None Remove="Syntax\cucumber.json" />
+    <None Remove="Templates\SpecFlowProject.xpt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Bundles\Cucumber.sublime-package" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\SpecFlow.SyntaxModeDefinition.xml">
@@ -92,14 +91,28 @@
     <EmbeddedResource Include="Gui\SpecFlowStepDefinitionIcon.ico">
       <LogicalName>SpecFlowStepDefinitionIcon.ico</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\SpecFlowProject.xpt.xml">
-      <LogicalName>SpecFlowProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gui\SpecFlowProjectIcon.ico">
       <LogicalName>SpecFlowProjectIcon.ico</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\SpecFlowFile.ico">
       <LogicalName>SpecFlowFile.ico</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="Syntax\cucumber.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\SpecFlowProject.xpt.xml">
+      <LogicalName>SpecFlowProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Syntax\cucumber.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AddinFile Include="Bundles\Cucumber.sublime-package">
+      <LogicalName>Cucumber.sublime-package</LogicalName>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AddinFile>
   </ItemGroup>
 </Project>

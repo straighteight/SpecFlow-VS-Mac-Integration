@@ -1,7 +1,7 @@
 <ExtensionModel>
 	<Dependencies>
-        <Addin id="::MonoDevelop.Core" version="8.0" />
-        <Addin id="::MonoDevelop.Ide" version="8.0" />
+        <Addin id="::MonoDevelop.Core" version="8.5.4" />
+        <Addin id="::MonoDevelop.Ide" version="8.5.4" />
     </Dependencies>
 	<Runtime>
 		<Import assembly="Gherkin.dll"/>
@@ -32,7 +32,7 @@
 	</Extension>
 
     <Extension path="/MonoDevelop/Ide/Editor/Bundles">
-        <Bundle file="Bundles/Cucumber.sublime-package" />
+        <Bundle resource="XamarinStudio.TechTalk.SpecFlow.Syntax.cucumber.json" />
     </Extension>
 
     <Extension path="/MonoDevelop/Ide/Editor/TextMate">
