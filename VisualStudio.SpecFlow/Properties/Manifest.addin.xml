@@ -1,8 +1,4 @@
 <ExtensionModel>
-	<Dependencies>
-        <Addin id="::MonoDevelop.Core" version="8.0" />
-        <Addin id="::MonoDevelop.Ide" version="8.0" />
-    </Dependencies>
 	<Runtime>
 		<Import assembly="Gherkin.dll"/>
 		<Import assembly="IKVM.OpenJDK.Core.dll"/>
@@ -18,7 +14,7 @@
 	</Runtime>
 
 	<Extension path="/MonoDevelop/Core/MimeTypes">
-		<MimeType id="application/feature-template" _description="Feature Template"  isText="true">
+		<MimeType id="application/feature-template" _description="Feature Template" isText="true">
 			<File pattern="*.feature"/>
 		</MimeType>
 	</Extension>
@@ -30,10 +26,6 @@
 		            _label       = "Feature Templates"
 		            extensions   = "*.feature"/>
 	</Extension>
-
-    <Extension path="/MonoDevelop/Ide/Editor/Bundles">
-        <Bundle file="Bundles/Cucumber.sublime-package" />
-    </Extension>
 
     <Extension path="/MonoDevelop/Ide/Editor/TextMate">
         <Repository folderPath = "Syntax" />
