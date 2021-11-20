@@ -48,17 +48,18 @@
     <PackageReference Include="MonoDevelop.Addins" Version="0.4.7" />
     <PackageReference Include="SpecFlow" Version="3.0.191" />
     <PackageReference Include="SpecFlow.CustomPlugin" Version="3.0.191" />
+    <AddinReference Include="MonoDevelop.DesignerSupport" />
+    <AddinReference Include="MonoDevelop.SourceEditor2" />
+    <AddinReference Include="MonoDevelop.DotNetCore" />
+    <AddinReference Include="MonoDevelop.PackageManagement" />
+    <AddinReference Include="MonoDevelop.TextEditor" />
+    <AddinReference Include="MonoDevelop.Refactoring" />
+    <AddinReference Include="MonoDevelop.TextEditor.Cocoa" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IdeIntegration\TechTalk.SpecFlow.IdeIntegration.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <AddinFile Include="Bundles\Cucumber.sublime-package">
-      <LogicalName>Cucumber.sublime-package</LogicalName>
-    </AddinFile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Bundles\Cucumber.sublime-package" />
     <None Remove="Templates\SpecFlowEventDefinition.xft.xml" />
     <None Remove="Templates\SpecFlowFeature.xft.xml" />
     <None Remove="Templates\SpecFlowProject.xpt.xml" />
@@ -69,6 +70,7 @@
     <None Remove="Gui\SpecFlowProjectIcon.ico" />
     <None Remove="Gui\SpecFlowStepDefinitionIcon.ico" />
     <None Remove="Properties\SpecFlow.SyntaxModeDefinition.xml" />
+    <None Remove="Syntax\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\SpecFlow.SyntaxModeDefinition.xml">
@@ -101,5 +103,21 @@
     <EmbeddedResource Include="Gui\SpecFlowFile.ico">
       <LogicalName>SpecFlowFile.ico</LogicalName>
     </EmbeddedResource>
+    <AddinFile Include="Syntax\CucumberPlainTextFeature.tmLanguage" />
+    <AddinFile Include="Syntax\CucumberSteps.tmLanguage" />
+    <AddinFile Include="Syntax\Background.tmSnippet" />
+    <AddinFile Include="Syntax\CucumberMultilineSteps.tmSnippet" />
+    <AddinFile Include="Syntax\GivenStep.tmSnippet" />
+    <AddinFile Include="Syntax\Scenario.tmSnippet" />
+    <AddinFile Include="Syntax\Scenario_heading_only.tmSnippet" />
+    <AddinFile Include="Syntax\ScenarioOutline.tmSnippet" />
+    <AddinFile Include="Syntax\Story.tmSnippet" />
+    <AddinFile Include="Syntax\ThenStep.tmSnippet" />
+    <AddinFile Include="Syntax\ThenStepPlaintext.tmSnippet" />
+    <AddinFile Include="Syntax\WhenStep.tmSnippet" />
+    <AddinFile Include="Syntax\WhenStepPlaintext.tmSnippet" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Syntax\" />
   </ItemGroup>
 </Project>
